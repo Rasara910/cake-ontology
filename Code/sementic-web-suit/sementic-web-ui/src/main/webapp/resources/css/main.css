@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 8, 2017, 11:01:35 AM
+    Author     : USER
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,h7,h8{
+    font-weight: normal;
+}
+
+.ui-widget{
+    font-size: 11px;
+}
+
+.ui-layout-unit{
+    border: none;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: 0.75;
+}
+
+.ui-datalist-content{
+    border:  0px;
+}
+
+.ui-datalist-item{
+    padding-top: 2px;
+}
+
+
+#header{
+    width: 100%;
+    height: 100%;
+    color: rgb(232, 233, 234) !important;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset;
+}
+
+.gradient{
+    border: 1px solid #404040;
+    background: #242122 url("/InventoryControlSystem/javax.faces.resource/images/ui-bg_highlight-soft_15_242122_1x100.png.xhtml?ln=primefaces-rocket") 50% 50% repeat-x;
+    color: #f4f4f9;
+}
+
+#user-setting{
+    margin-left:auto; 
+    margin-right:0;
+}
+
+span.separator{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10 px;
+}
+
+
+/* EMOJI */
+.emoji  {width: 5px; height: 5px; display: block;}
+.emoji.emoji-smile{ background: url("/affluence-chat-bot-admin-ui/javax.faces.resource/emoji/1f62e.png.xhtml?ln=images") } 
+
+
+.input-text-width-1{
+    width: 250px;
+}
+
+.input-text-width-2{
+    width: 200px;
+}
+
+.input-text-width-3{
+    width: 350px;
+}
+
+.panel-style-1{
+    width: 250px;
+    font-size: 11px;
+}
+
+.centeredPanel{
+    width:25%;
+    height:25%;
+    min-width:100px;
+    min-height:100px;
+    position:absolute;
+    left:37%;
+    top:20%;
+}
+
+.systemIntent{
+    color: red;
+    font-weight: bolder;
+}
+
+.normalIntent{
+    
+}
+
+

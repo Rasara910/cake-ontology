@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SEMENTIC-WEB-PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.sw.ontology.model.Email</class>
+    <class>com.sw.ontology.model.LoyaltyProgram</class>
+    <class>com.sw.ontology.model.MemberClass</class>
+    <class>com.sw.ontology.model.MemberMaster</class>
+    <class>com.sw.ontology.model.MemberPointLedger</class>
+    <class>com.sw.ontology.model.MemberPointLedgerTrx</class>
+    <class>com.sw.ontology.model.MemberType</class>
+    <class>com.sw.ontology.model.PasswordPolicy</class>
+    <class>com.sw.ontology.model.Privilege</class>
+    <class>com.sw.ontology.model.ProductType</class>
+    <class>com.sw.ontology.model.ProgramPeriod</class>
+    <class>com.sw.ontology.model.ProgramRule</class>
+    <class>com.sw.ontology.model.RclSale</class>
+    <class>com.sw.ontology.model.RecivedSms</class>
+    <class>com.sw.ontology.model.RedeemDetails</class>
+    <class>com.sw.ontology.model.RedeemDetailsStatusHistory</class>
+    <class>com.sw.ontology.model.RedeemType</class>
+    <class>com.sw.ontology.model.Role</class>
+    <class>com.sw.ontology.model.RolePrivilege</class>
+    <class>com.sw.ontology.model.Salutation</class>
+    <class>com.sw.ontology.model.Showroom</class>
+    <class>com.sw.ontology.model.SmsLog</class>
+    <class>com.sw.ontology.model.TransactionCategory</class>
+    <class>com.sw.ontology.model.TransactionType</class>
+    <class>com.sw.ontology.model.User</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <!-- ########## DEVELOPMENT     -->
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/affluence_loyalty_dev?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+      <!--<property name="eclipselink.logging.level" value="FINE"/>-->
+    </properties>
+  </persistence-unit>
+</persistence>

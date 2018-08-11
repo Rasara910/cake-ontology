@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            <ui:insert name="pageTitle">Facelet Title</ui:insert>
+        </title>
+        <h:outputStylesheet library="css" name="main.css" />
+
+        <script type="text/javascript" >
+
+            function trimTextFiled(inpuText) {
+                var str = inpuText.value.trimLeft();
+                inpuText.value = str;
+            }
+
+        </script>
+
+    </h:head>
+
+    <h:body>
+        <p:layout fullPage="true" >
+            <p:layoutUnit position="north" size="83">
+                <h:panelGrid id="header" styleClass="gradient" columns="3" >
+                    <h:panelGrid  columns="1" >
+                        <h:panelGrid columns="1" >
+                            <h1 >Cake Ontology</h1>
+                            <h4 >#{applicationBean.version}</h4>              
+                        </h:panelGrid>
+                    </h:panelGrid>
+                    <h:panelGrid columns="1" >
+                        <!-- EMPTY -->
+                    </h:panelGrid>
+                    <h:panelGrid id="user-setting" columns="2" >
+                        <h:panelGrid columns="1" >
+                            <h4>Hi </h4>
+                            <h:form id="frmLogout">
+
+                                <p:splitButton value="Logout" actionListener="#{loginBean.logoutAction}"  >
+                                    <p:menuitem value="Change Password" actionListener="#{loginBean.changePasswword}" />
+
+                                </p:splitButton>
+                            </h:form>
+                        </h:panelGrid>
+                    </h:panelGrid>
+                </h:panelGrid>
+            </p:layoutUnit>
+            <p:layoutUnit position="west" size="200" header="Menu" collapsible="true">
+                <ui:include src="navigation.xhtml" />
+            </p:layoutUnit>
+            <p:layoutUnit position="south" size="34">
+                <h:panelGrid id="footer" styleClass="gradient" columns="2"  style="width: 100%; ">
+                    <h5>Solution By UOM</h5>
+                    <p:ajaxStatus style="float: right; width: 220px; height: 20px; " >  
+                        <f:facet name="start">  
+                            <h:graphicImage library="images" name="ajax-loader.gif"  />  
+                        </f:facet>  
+
+                        <f:facet name="complete">  
+                            <h:outputText value="" />  
+                        </f:facet>  
+                    </p:ajaxStatus>
+                </h:panelGrid>
+            </p:layoutUnit>
+            <p:layoutUnit position="center" size="80">
+                <ui:insert name="content">Content Here</ui:insert>
+            </p:layoutUnit>
+        </p:layout>
+
+        <ui:insert name="dialogs">
+
+        </ui:insert>
+
+    </h:body>
+
+</html>
