@@ -23,11 +23,13 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     public List<String> cakeBaseList;
     public List<String> cakeFrostingList;
     public List<String> cakeToppingList;
+    public List<String> cakeFruitAddingList;
 
 
     private String selectedBase;
     private String selectedFrosting;
     private String selectedTopping;
+    private String selectedFruitAdding;
 
     @Autowired
     private CakeOntologyService cakeOntologyService;
@@ -40,6 +42,7 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
         cakeBaseList = co.findAllCakeBases();
         cakeFrostingList=co.findAllFrostings();
         cakeToppingList=co.findAllToppings();
+        cakeFruitAddingList=co.findAllFruitAddings();
     }
 
 
@@ -98,5 +101,21 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
 
     public void setSelectedTopping(String selectedTopping) {
         this.selectedTopping = selectedTopping;
+    }
+
+    public List<String> getCakeFruitAddingList() {
+        return cakeFruitAddingList;
+    }
+
+    public void setCakeFruitAddingList(List<String> cakeFruitAddingList) {
+        this.cakeFruitAddingList = cakeFruitAddingList;
+    }
+
+    public String getSelectedFruitAdding() {
+        return selectedFruitAdding;
+    }
+
+    public void setSelectedFruitAdding(String selectedFruitAdding) {
+        this.selectedFruitAdding = selectedFruitAdding;
     }
 }

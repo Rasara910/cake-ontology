@@ -34,8 +34,10 @@
                                        itemLabel="#{ct}" itemValue="#{ct}"/>
                     </p:selectOneMenu>
 
-                    <p:selectOneMenu id="fruitadding" value="" required="false">
+                    <p:selectOneMenu id="fruitadding" value="#{cakeSearchBean.selectedFruitAdding}" required="false">
                         <f:selectItem itemLabel="Select Fruit Addings"/>
+                        <f:selectItems value="#{cakeSearchBean.cakeFruitAddingList}" var="cfa"
+                                       itemLabel="#{cfa}" itemValue="#{cfa}"/>
                     </p:selectOneMenu>
 
                     <p:selectOneMenu id="otheringredients" value="" required="false">
