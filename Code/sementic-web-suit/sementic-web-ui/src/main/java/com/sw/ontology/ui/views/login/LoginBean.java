@@ -53,14 +53,14 @@ public class LoginBean implements Serializable {
 
     public void loginAction() {
         try {
-            String ePassword = "123";
+            String ePassword = "user";
             String enteredPassword = password;
             if (enteredPassword.equals(ePassword)) {
                 loggedIn = true;
                 ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
                 ec.redirect(ec.getRequestContextPath() + "/views/index.xhtml");
             } else {
-                FacesMessage facesMsg = new FacesMessage(FacesMessage.SEVERITY_ERROR, "Inavlid", "xfg");
+                FacesMessage facesMsg = new FacesMessage(FacesMessage.SEVERITY_ERROR, "Invalid Password", "Invalid");
                 FacesContext.getCurrentInstance().addMessage(null, facesMsg);
             }
         } catch (Exception ex) {

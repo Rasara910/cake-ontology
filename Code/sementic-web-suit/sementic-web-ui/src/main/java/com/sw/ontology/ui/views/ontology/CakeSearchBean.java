@@ -51,17 +51,18 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     private CakeOntologyService cakeOntologyService;
 
 
-
     @PostConstruct
     public void init() {
-        CakeOntology co =new CakeOntology();
+        CakeOntology co = new CakeOntology();
         cakeBaseList = co.findAllCakeBases();
-        cakeFrostingList=co.findAllFrostings();
-        cakeToppingList=co.findAllToppings();
-        cakeFruitAddingList=co.findAllFruitAddings();
-        cakeOtherIngredientList=co.findAllOtherIngredients();
-        cakeOccasionList=co.findAllOccasions();
-        cakeShapeList=co.findAllShapes();
+        cakeFrostingList = co.findAllFrostings();
+        cakeToppingList = co.findAllToppings();
+        cakeFruitAddingList = co.findAllFruitAddings();
+        cakeOtherIngredientList = co.findAllOtherIngredients();
+        cakeOccasionList = co.findAllOccasions();
+        cakeShapeList = co.findAllShapes();
+
+        searchCake();
     }
 
     public void searchCake() {
@@ -75,7 +76,8 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
 //                }
 //            });
 
-            CakeOntology co =new CakeOntology();
+            CakeOntology co = new CakeOntology();
+            cakeList = co.findCakesForCakeSearch(selectedBase, selectedFrosting, selectedTopping, selectedFruitAdding, selectedOtherIngredient, selectedOccasion, selectedShape, priceFrom, priceTo);
         } catch (Exception e) {
             e.printStackTrace();
         }
