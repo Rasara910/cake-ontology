@@ -1,4 +1,4 @@
-package com.sw.ontology.core.service;
+package com.sw.ontology.core.service.impl;
 
 
 import org.apache.jena.query.*;
@@ -68,6 +68,38 @@ public class CakeOntology {
             while(results.hasNext()){
                 QuerySolution solution=results.nextSolution();
                 Resource bases= solution.getResource("frosting");
+                System.out.println(bases.getLocalName());
+                cakeFrostingList.add(bases.getLocalName());
+            }
+        }finally{
+            qexec.close();
+        }
+        return cakeFrostingList;
+    }
+
+    public List<String> findAllToppings(){
+
+        FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
+        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        //  model.write(System.out,"TURTLE");
+
+        List<String> cakeFrostingList = new ArrayList<String>();
+
+        String queryString ="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " +
+                "PREFIX cake: <http://www.cake.com/ontologies/cake.owl#> " +
+                "SELECT DISTINCT ?toppings " +
+                "WHERE { ?subject cake:hasTopping ?toppings}";
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query,model);
+
+        try{
+            ResultSet results=qexec.execSelect();
+            while(results.hasNext()){
+                QuerySolution solution=results.nextSolution();
+                Resource bases= solution.getResource("toppings");
                 System.out.println(bases.getLocalName());
                 cakeFrostingList.add(bases.getLocalName());
             }

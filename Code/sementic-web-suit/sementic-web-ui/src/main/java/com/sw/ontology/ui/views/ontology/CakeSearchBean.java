@@ -1,10 +1,9 @@
 package com.sw.ontology.ui.views.ontology;
 
-import com.sw.ontology.core.service.CakeOntology;
+import com.sw.ontology.core.service.impl.CakeOntology;
 import com.sw.ontology.core.service.CakeOntologyService;
 import com.sw.ontology.ui.views.SecurityBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
@@ -23,10 +22,12 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
 
     public List<String> cakeBaseList;
     public List<String> cakeFrostingList;
+    public List<String> cakeToppingList;
 
 
     private String selectedBase;
     private String selectedFrosting;
+    private String selectedTopping;
 
     @Autowired
     private CakeOntologyService cakeOntologyService;
@@ -38,6 +39,7 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
         CakeOntology co =new CakeOntology();
         cakeBaseList = co.findAllCakeBases();
         cakeFrostingList=co.findAllFrostings();
+        cakeToppingList=co.findAllToppings();
     }
 
 
@@ -80,5 +82,21 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     public void setSelectedFrosting(String selectedFrosting) {
         this.selectedFrosting = selectedFrosting;
 
+    }
+
+    public List<String> getCakeToppingList() {
+        return cakeToppingList;
+    }
+
+    public void setCakeToppingList(List<String> cakeToppingList) {
+        this.cakeToppingList = cakeToppingList;
+    }
+
+    public String getSelectedTopping() {
+        return selectedTopping;
+    }
+
+    public void setSelectedTopping(String selectedTopping) {
+        this.selectedTopping = selectedTopping;
     }
 }

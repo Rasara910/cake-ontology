@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3b95e8-b25b-493f-9664-58d2eed1176c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/CakeOntology.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/TestJena.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntologyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntologyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/CakeOntology.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntology.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/cake-search.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/cake-search.xhtml" afterDir="false" />
     </list>
@@ -34,19 +31,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="967" />
+          <entry key="java" value="1002" />
           <entry key="properties" value="7" />
           <entry key="txt" value="13" />
-          <entry key="xhtml" value="416" />
+          <entry key="xhtml" value="425" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="967" />
+          <entry key="JAVA" value="1002" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Properties" value="7" />
-          <entry key="XHTML" value="416" />
+          <entry key="XHTML" value="425" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -109,14 +106,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/CakeOntology.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntology.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+            <state relative-caret-position="122">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#720#728#0" expanded="true" />
                 <element signature="e#2182#2190#0" expanded="true" />
+                <element signature="e#3684#3692#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +123,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/cake-search.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="310">
+              <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -134,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="367">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1694#1695#0" expanded="true" />
@@ -144,6 +142,14 @@
                 <element signature="e#1859#1860#0" expanded="true" />
                 <element signature="e#1918#1919#0" expanded="true" />
                 <element signature="e#1957#1958#0" expanded="true" />
+                <element signature="e#2143#2144#0" expanded="true" />
+                <element signature="e#2181#2182#0" expanded="true" />
+                <element signature="e#2249#2250#0" expanded="true" />
+                <element signature="e#2303#2304#0" expanded="true" />
+                <element signature="e#2345#2346#0" expanded="true" />
+                <element signature="e#2383#2384#0" expanded="true" />
+                <element signature="e#2445#2446#0" expanded="true" />
+                <element signature="e#2499#2500#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JasperReportUtil.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JsfUtil.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/DateUtil.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/PropertyReader.java" />
@@ -249,8 +254,9 @@
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/webapp/WEB-INF/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntologyServiceImpl.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/TestJena.java" />
-        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/CakeOntology.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntology.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/cake-search.xhtml" />
       </list>
     </option>
@@ -500,7 +506,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534074808756" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534075524809" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -527,11 +533,11 @@
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration name="CakeOntology" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sw.ontology.core.service.CakeOntology" />
+      <option name="MAIN_CLASS_NAME" value="com.sw.ontology.core.service.impl.CakeOntology" />
       <module name="sementic-web-ui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sw.ontology.core.service.*" />
+          <option name="PATTERN" value="com.sw.ontology.core.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -646,12 +652,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534001499391</updated>
-      <workItem from="1534001500666" duration="26249000" />
+      <workItem from="1534001500666" duration="26711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26249000" />
+    <option name="totallyTimeSpent" value="26711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="991" extended-state="0" />
@@ -664,7 +670,7 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Persistence" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -676,7 +682,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32990867" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32990867" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.32990867" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.32990867" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39954337" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -1029,10 +1035,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/CakeOntologyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntology.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#720#728#0" expanded="true" />
+            <element signature="e#2182#2190#0" expanded="true" />
+            <element signature="e#3684#3692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="367">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1694#1695#0" expanded="true" />
@@ -1041,33 +1067,22 @@
             <element signature="e#1859#1860#0" expanded="true" />
             <element signature="e#1918#1919#0" expanded="true" />
             <element signature="e#1957#1958#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/CakeOntologyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/CakeOntology.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#720#728#0" expanded="true" />
-            <element signature="e#2182#2190#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#2249#2250#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#2499#2500#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/cake-search.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="310">
+          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
         </state>
       </provider>
     </entry>
