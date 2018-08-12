@@ -17,6 +17,8 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
@@ -32,6 +34,12 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "PasswordPolicy.findByPolicyId", query = "SELECT p FROM PasswordPolicy p WHERE p.policyId = :policyId"),
     @NamedQuery(name = "PasswordPolicy.findByName", query = "SELECT p FROM PasswordPolicy p WHERE p.name = :name")})
 public class PasswordPolicy implements Serializable {
+
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 20)
+    @Column(name = "status")
+    private String status;
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -104,6 +112,14 @@ public class PasswordPolicy implements Serializable {
     @Override
     public String toString() {
         return "PasswordPolicy[ policyId=" + policyId + " ]";
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
     
 }

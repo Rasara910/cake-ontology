@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
@@ -10,29 +11,29 @@
                         http://www.springframework.org/schema/tx
                         http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
-    <context:annotation-config />
-    <context:component-scan  base-package="com.sw.ontology,com.sw.ontology.core.dao,com.sw.ontology.core.service,com.sw.ontology.ui.views" />
-    
+    <context:annotation-config/>
+    <context:component-scan
+            base-package="com.sw.ontology,com.sw.ontology.core.dao,com.sw.ontology.core.service,com.sw.ontology.ui.views"/>
+
     <!-- JPA AND TRANSACTION -->
     <!-- SEMENTIC PU -->
-    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean" >
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
         <property name="persistenceUnitName" value="SEMENTIC-WEB-PU"/>
     </bean>
 
-    <bean  class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+    <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
 
     <bean class="org.springframework.orm.jpa.JpaTransactionManager">
-        <property name="entityManagerFactory" ref="entityManagerFactory" />
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
     </bean>
-    
+
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
-          p:entityManagerFactory-ref="entityManagerFactory" />
-   
+          p:entityManagerFactory-ref="entityManagerFactory"/>
 
-    <tx:annotation-driven />
-        
 
-    
+    <tx:annotation-driven/>
+
+
     <!-- Mail service -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="host" value="smtp.gmail.com"/>
@@ -51,5 +52,5 @@
             </props>
         </property>
     </bean>
-	
+
 </beans>

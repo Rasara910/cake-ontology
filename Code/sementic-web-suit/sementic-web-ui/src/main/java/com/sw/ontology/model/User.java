@@ -31,14 +31,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "sw_user")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u"),
-    @NamedQuery(name = "User.findByUserName", query = "SELECT u FROM User u WHERE u.userName = :userName"),
-    @NamedQuery(name = "User.findByStatus", query = "SELECT u FROM User u WHERE u.status = :status"),
-    @NamedQuery(name = "User.findByLoginAttempts", query = "SELECT u FROM User u WHERE u.loginAttempts = :loginAttempts"),
-    @NamedQuery(name = "User.findByAddedBy", query = "SELECT u FROM User u WHERE u.addedBy = :addedBy"),
-    @NamedQuery(name = "User.findByAddedDate", query = "SELECT u FROM User u WHERE u.addedDate = :addedDate"),
-    @NamedQuery(name = "User.findByModifiedBy", query = "SELECT u FROM User u WHERE u.modifiedBy = :modifiedBy"),
-    @NamedQuery(name = "User.findByModifiedDate", query = "SELECT u FROM User u WHERE u.modifiedDate = :modifiedDate")})
+        @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u"),
+        @NamedQuery(name = "User.findByUserName", query = "SELECT u FROM User u WHERE u.userName = :userName"),
+        @NamedQuery(name = "User.findByStatus", query = "SELECT u FROM User u WHERE u.status = :status"),
+        @NamedQuery(name = "User.findByLoginAttempts", query = "SELECT u FROM User u WHERE u.loginAttempts = :loginAttempts"),
+        @NamedQuery(name = "User.findByAddedBy", query = "SELECT u FROM User u WHERE u.addedBy = :addedBy"),
+        @NamedQuery(name = "User.findByAddedDate", query = "SELECT u FROM User u WHERE u.addedDate = :addedDate"),
+        @NamedQuery(name = "User.findByModifiedBy", query = "SELECT u FROM User u WHERE u.modifiedBy = :modifiedBy"),
+        @NamedQuery(name = "User.findByModifiedDate", query = "SELECT u FROM User u WHERE u.modifiedDate = :modifiedDate")})
 public class User implements Serializable {
     @Column(name = "email")
     private String email;
@@ -52,6 +52,29 @@ public class User implements Serializable {
     @Lob
     @Column(name = "password")
     private String password;
+
+    @Basic(optional = false)
+    @Column(name = "employee_id")
+    private String employeeId;
+    @Basic(optional = false)
+    @Column(name = "first_name")
+    private String firstName;
+    @Basic(optional = false)
+    @Column(name = "middle_name")
+    private String middleName;
+    @Basic(optional = false)
+    @Column(name = "last_name")
+    private String lastName;
+    @Basic(optional = false)
+    @Column(name = "nic")
+    private String nic;
+    @Basic(optional = false)
+    @Column(name = "contact_number")
+    private String contactNumber;
+    @Basic(optional = false)
+    @Column(name = "mobile_number")
+    private String mobileNumber;
+
     @Basic(optional = false)
     @Column(name = "status")
     private String status;
@@ -81,6 +104,7 @@ public class User implements Serializable {
     @JoinColumn(name = "policy_id", referencedColumnName = "policy_id")
     @ManyToOne
     private PasswordPolicy policyId;
+
 
     @Transient
     private List<Privilege> privileges;
@@ -199,7 +223,65 @@ public class User implements Serializable {
         this.policyId = policyId;
     }
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getNic() {
+        return nic;
+    }
+
+    public void setNic(String nic) {
+        this.nic = nic;
+    }
+
+    public String getContactNumber() {
+        return contactNumber;
+    }
+
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
 
     @Override
     public int hashCode() {
@@ -223,7 +305,7 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User[ userName=" + userName + " ]";
+        return "com.fg.loyalty.model.User[ userName=" + userName + " ]";
     }
 
     public String getEmail() {
