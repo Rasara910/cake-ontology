@@ -2,6 +2,7 @@ package com.sw.ontology.ui.views.ontology;
 
 import com.sw.ontology.core.service.impl.CakeOntology;
 import com.sw.ontology.core.service.CakeOntologyService;
+import com.sw.ontology.model.Cake;
 import com.sw.ontology.ui.views.SecurityBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,6 +10,8 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import java.io.Serializable;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -28,6 +31,8 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     public List<String> cakeOccasionList;
     public List<String> cakeShapeList;
 
+    public List<Cake> cakeList;
+
 
     private String selectedBase;
     private String selectedFrosting;
@@ -38,6 +43,9 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     private String selectedShape;
     private String priceFrom;
     private String priceTo;
+
+    private Cake selectedCake;
+
 
     @Autowired
     private CakeOntologyService cakeOntologyService;
@@ -56,6 +64,22 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
         cakeShapeList=co.findAllShapes();
     }
 
+    public void searchCake() {
+        try {
+//            memberMasters = memberMasterService.findMembersForMemberSearch(fromAddedDate, toAddedDate, addedBy, status, showroom, cardIssuance, memberCode, nic);
+//            memberMasterService.getNoOfPoints(memberMasters);
+//            Collections.sort(memberMasters, new Comparator<MemberMaster>() {
+//                @Override
+//                public int compare(MemberMaster mm1, MemberMaster mm2) {
+//                    return mm1.getAddedDate().compareTo(mm2.getAddedDate());
+//                }
+//            });
+
+            CakeOntology co =new CakeOntology();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public List<String> getCakeBaseList() {
         return cakeBaseList;
@@ -192,5 +216,21 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
 
     public void setPriceTo(String priceTo) {
         this.priceTo = priceTo;
+    }
+
+    public List<Cake> getCakeList() {
+        return cakeList;
+    }
+
+    public void setCakeList(List<Cake> cakeList) {
+        this.cakeList = cakeList;
+    }
+
+    public Cake getSelectedCake() {
+        return selectedCake;
+    }
+
+    public void setSelectedCake(Cake selectedCake) {
+        this.selectedCake = selectedCake;
     }
 }

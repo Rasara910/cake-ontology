@@ -71,17 +71,16 @@
 
                 </h:panelGrid>
 
-                <p:dataTable id="tblCakes" value="" var="member" rowKey=""
+                <p:dataTable id="tblCakes" value="#{cakeSearchBean.cakeList}"  var="cake" rowKey="#{cake}"
                              paginator="true" rows="15" lazy="true" rowsPerPageTemplate="10,15,20"
-                             selection="" selectionMode="single">
+                             selection="#{cakeSearchBean.selectedCake}" selectionMode="single">
                     <p:ajax event="rowSelect"/>
                     <p:column headerText="Cake">
-                        <p:outputLabel value="#{member.memberCode}"/>
+                        <p:outputLabel value="#{cake.cakeName}"/>
                     </p:column>
                     <p:column headerText="Price Rs.">
-                        <p:outputLabel value="#{member.memberType.memberType}"/>
+                        <p:outputLabel value="#{cake.price}"/>
                     </p:column>
-
 
                 </p:dataTable>
 

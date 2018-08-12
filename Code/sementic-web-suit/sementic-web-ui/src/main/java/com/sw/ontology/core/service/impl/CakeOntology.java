@@ -16,7 +16,7 @@ public class CakeOntology {
     public List<String> findAllCakeBases(){
 
         FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
-        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        Model model =  FileManager.get().loadModel("/assets/cake.owl");
       //  model.write(System.out,"TURTLE");
 
         List<String> cakeBaseList = new ArrayList<String>();
@@ -48,7 +48,7 @@ public class CakeOntology {
     public List<String> findAllFrostings(){
 
         FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
-        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        Model model =  FileManager.get().loadModel("/assets/cake.owl");
         //  model.write(System.out,"TURTLE");
 
         List<String> cakeFrostingList = new ArrayList<String>();
@@ -80,7 +80,7 @@ public class CakeOntology {
     public List<String> findAllToppings(){
 
         FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
-        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        Model model =  FileManager.get().loadModel("/assets/cake.owl");
         //  model.write(System.out,"TURTLE");
 
         List<String> cakeToppingList = new ArrayList<String>();
@@ -112,7 +112,7 @@ public class CakeOntology {
     public List<String> findAllFruitAddings(){
 
         FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
-        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        Model model =  FileManager.get().loadModel("/assets/cake.owl");
         //  model.write(System.out,"TURTLE");
 
         List<String> cakeFruitAddingList = new ArrayList<String>();
@@ -144,7 +144,7 @@ public class CakeOntology {
     public List<String> findAllOtherIngredients(){
 
         FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
-        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        Model model =  FileManager.get().loadModel("/assets/cake.owl");
         //  model.write(System.out,"TURTLE");
 
         List<String> cakeOtherIngredientList = new ArrayList<String>();
@@ -176,7 +176,7 @@ public class CakeOntology {
     public List<String> findAllOccasions(){
 
         FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
-        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        Model model =  FileManager.get().loadModel("/assets/cake.owl");
         //  model.write(System.out,"TURTLE");
 
         List<String> cakeOccasionList = new ArrayList<String>();
@@ -208,7 +208,7 @@ public class CakeOntology {
     public List<String> findAllShapes(){
 
         FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
-        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        Model model =  FileManager.get().loadModel("/assets/cake.owl");
         //  model.write(System.out,"TURTLE");
 
         List<String> cakeShapeList = new ArrayList<String>();
