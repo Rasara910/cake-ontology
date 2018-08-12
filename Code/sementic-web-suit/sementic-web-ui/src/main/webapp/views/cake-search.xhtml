@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./../WEB-INF/templates/mainTemplate.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:define name="pageTitle">
+        Bake n Take
+    </ui:define>
+
+    <ui:define name="content">
+        <h:form>
+            <p:panel id="findCakes" header="Search Cakes">
+                <h:panelGrid columns="7" cellpadding="5" cellspacing="5">
+
+                    <p:selectOneMenu id="showroom" value="#{memberListBean.showroom}" required="false"
+                                     converter="#{showroomConverter}">
+                        <f:selectItem itemLabel="Select Showroom"/>
+                        <f:selectItems value="#{memberListBean.showroomList}" var="sn"
+                                       itemLabel="#{sn.showroomName}" itemValue="#{sn}"/>
+                    </p:selectOneMenu>
+
+
+                    <p:commandButton value="Search" actionListener="#{memberListBean.searchMember}"
+                                     update="msgs,tblMembers"/>
+                    <p:growl id="msgs"/>
+                </h:panelGrid>
+            </p:panel>
+        </h:form>
+    </ui:define>
+
+    <ui:define name="dialogs">
+        dialogs
+    </ui:define>
+
+</ui:composition>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
                 template="./../WEB-INF/templates/mainTemplate.xhtml"
                 xmlns:h="http://java.sun.com/jsf/html"
@@ -7,15 +8,29 @@
                 xmlns:f="http://java.sun.com/jsf/core">
 
     <ui:define name="pageTitle">
-        Cake Ontology
+        Bake n Take
     </ui:define>
 
     <ui:define name="content">
-      
 
+        <h:form>
+
+            <p:panel header="Welcome" id="pnlPicture" style="margin-bottom: 10px;">
+                <div class="ui-g">
+                    <div class="ui-g-12 ui-md-6 ui-lg-4"></div>
+
+                    <div class="ui-g-12 ui-md-6 ui-lg-4">
+                        <p:graphicImage value="../resources/images/cake.png" stream="false"
+                                        style="height:450px;"/>
+                    </div>
+                    <div class="ui-g-12 ui-md-6 ui-lg-4"></div>
+                </div>
+            </p:panel>
+
+        </h:form>
     </ui:define>
     <ui:define name="dialogs">
-     
+
     </ui:define>
 
 </ui:composition>
