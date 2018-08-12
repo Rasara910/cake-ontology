@@ -43,13 +43,6 @@ public class DateUtil {
     private final static Logger logger = LoggerFactory.getLogger(DateUtil.class);
 
 
-    /**
-     * Author: Sayyaff
-     * String to long Conversion
-     *
-     * @return
-     * @throws ParseException
-     */
     public long convertToLong(String date, String format) {
         SimpleDateFormat f = new SimpleDateFormat(format);// dd-MMM-yyyy
         Date d = null;

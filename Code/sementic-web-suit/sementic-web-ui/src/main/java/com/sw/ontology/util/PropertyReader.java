@@ -2,9 +2,6 @@ package com.sw.ontology.util;
 
 import java.util.ResourceBundle;
 
-/**
- * Created by prasad on 3/26/15.
- */
 public class PropertyReader {
 
 
