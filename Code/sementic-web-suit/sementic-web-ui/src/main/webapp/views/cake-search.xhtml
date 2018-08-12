@@ -22,8 +22,10 @@
                                        itemLabel="#{cb}" itemValue="#{cb}"/>
                     </p:selectOneMenu>
 
-                    <p:selectOneMenu id="frosting" value="" required="false">
+                    <p:selectOneMenu id="frosting" value="#{cakeSearchBean.selectedFrosting}" required="false">
                         <f:selectItem itemLabel="Select Frosting"/>
+                        <f:selectItems value="#{cakeSearchBean.cakeFrostingList}" var="cf"
+                                       itemLabel="#{cf}" itemValue="#{cf}"/>
                     </p:selectOneMenu>
 
                     <p:selectOneMenu id="topping" value="" required="false">

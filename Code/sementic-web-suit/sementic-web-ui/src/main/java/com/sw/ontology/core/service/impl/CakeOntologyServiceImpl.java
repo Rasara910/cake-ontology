@@ -2,15 +2,11 @@ package com.sw.ontology.core.service.impl;
 
 import com.sw.ontology.core.service.CakeOntologyService;
 
-import com.sw.ontology.core.service.TestJena;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.util.FileManager;
 import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.Literal;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.util.FileManager;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +14,7 @@ import java.util.List;
 /**
  * Created by praveen on 8/12/18
  */
+@Service
 public class CakeOntologyServiceImpl implements CakeOntologyService {
 
 

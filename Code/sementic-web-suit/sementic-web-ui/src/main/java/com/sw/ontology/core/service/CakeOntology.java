@@ -1,0 +1,79 @@
+package com.sw.ontology.core.service;
+
+
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.util.FileManager;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by praveen on 8/12/18
+ */
+public class CakeOntology {
+    public List<String> findAllCakeBases(){
+
+        FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
+        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+      //  model.write(System.out,"TURTLE");
+
+        List<String> cakeBaseList = new ArrayList<String>();
+
+        String queryString ="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " +
+                "PREFIX cake: <http://www.cake.com/ontologies/cake.owl#> " +
+                "SELECT DISTINCT ?bases " +
+                "WHERE { ?subject cake:hasCakeBase ?bases}";
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query,model);
+
+        try{
+            ResultSet results=qexec.execSelect();
+            while(results.hasNext()){
+                QuerySolution solution=results.nextSolution();
+                Resource bases= solution.getResource("bases");
+                System.out.println(bases.getLocalName());
+                cakeBaseList.add(bases.getLocalName());
+            }
+        }finally{
+            qexec.close();
+        }
+        return cakeBaseList;
+    }
+
+    public List<String> findAllFrostings(){
+
+        FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
+        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        //  model.write(System.out,"TURTLE");
+
+        List<String> cakeFrostingList = new ArrayList<String>();
+
+        String queryString ="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " +
+                "PREFIX cake: <http://www.cake.com/ontologies/cake.owl#> " +
+                "SELECT  DISTINCT ?frosting" +
+                " WHERE { ?subject cake:hasFrosting ?frosting}";
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query,model);
+
+        try{
+            ResultSet results=qexec.execSelect();
+            while(results.hasNext()){
+                QuerySolution solution=results.nextSolution();
+                Resource bases= solution.getResource("frosting");
+                System.out.println(bases.getLocalName());
+                cakeFrostingList.add(bases.getLocalName());
+            }
+        }finally{
+            qexec.close();
+        }
+        return cakeFrostingList;
+    }
+}

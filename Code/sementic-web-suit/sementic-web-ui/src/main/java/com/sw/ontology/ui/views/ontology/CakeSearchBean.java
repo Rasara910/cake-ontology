@@ -1,5 +1,6 @@
 package com.sw.ontology.ui.views.ontology;
 
+import com.sw.ontology.core.service.CakeOntology;
 import com.sw.ontology.core.service.CakeOntologyService;
 import com.sw.ontology.ui.views.SecurityBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +22,22 @@ import java.util.List;
 public class CakeSearchBean extends SecurityBean implements Serializable {
 
     public List<String> cakeBaseList;
+    public List<String> cakeFrostingList;
+
+
     private String selectedBase;
+    private String selectedFrosting;
 
     @Autowired
     private CakeOntologyService cakeOntologyService;
 
+
+
     @PostConstruct
     public void init() {
-        cakeBaseList = cakeOntologyService.findAllCakeBases();
+        CakeOntology co =new CakeOntology();
+        cakeBaseList = co.findAllCakeBases();
+        cakeFrostingList=co.findAllFrostings();
     }
 
 
@@ -54,5 +63,22 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
 
     public void setSelectedBase(String selectedBase) {
         this.selectedBase = selectedBase;
+    }
+
+    public List<String> getCakeFrostingList() {
+        return cakeFrostingList;
+    }
+
+    public void setCakeFrostingList(List<String> cakeFrostingList) {
+        this.cakeFrostingList = cakeFrostingList;
+    }
+
+    public String getSelectedFrosting() {
+        return selectedFrosting;
+    }
+
+    public void setSelectedFrosting(String selectedFrosting) {
+        this.selectedFrosting = selectedFrosting;
+
     }
 }
