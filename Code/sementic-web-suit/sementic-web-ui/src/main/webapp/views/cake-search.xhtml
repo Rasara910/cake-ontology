@@ -52,20 +52,39 @@
                                        itemLabel="#{co}" itemValue="#{co}"/>
                     </p:selectOneMenu>
 
-                    <p:selectOneMenu id="shapes" value="" required="false">
+                    <p:selectOneMenu id="shapes" value="#{cakeSearchBean.selectedShape}" required="false">
                         <f:selectItem itemLabel="Select Shape"/>
+                        <f:selectItems value="#{cakeSearchBean.cakeShapeList}" var="cs"
+                                       itemLabel="#{cs}" itemValue="#{cs}"/>
                     </p:selectOneMenu>
 
-                    <p:inputText id="pricefrom" value="" required="false" maxlength="20"
+                    <p:inputText id="pricefrom" value="#{cakeSearchBean.priceFrom}" required="false" maxlength="20"
                                  placeholder="Price: From (Rs.)"/>
-                    <p:inputText id="priceto" value="" required="false" maxlength="20"
+
+                    <p:inputText id="priceto" value="#{cakeSearchBean.priceTo}" required="false" maxlength="20"
                                  placeholder="To (Rs.)"/>
 
 
-                    <p:commandButton value="Search" actionListener="#"
-                                     update=""/>
+                    <p:commandButton value="Search" actionListener="#{cakeSearchBean.searchCake}"
+                                     update="msgs,tblCakes"/>
                     <p:growl id="msgs"/>
+
                 </h:panelGrid>
+
+                <p:dataTable id="tblCakes" value="" var="member" rowKey=""
+                             paginator="true" rows="15" lazy="true" rowsPerPageTemplate="10,15,20"
+                             selection="" selectionMode="single">
+                    <p:ajax event="rowSelect"/>
+                    <p:column headerText="Cake">
+                        <p:outputLabel value="#{member.memberCode}"/>
+                    </p:column>
+                    <p:column headerText="Price Rs.">
+                        <p:outputLabel value="#{member.memberType.memberType}"/>
+                    </p:column>
+
+
+                </p:dataTable>
+
             </p:panel>
         </h:form>
     </ui:define>

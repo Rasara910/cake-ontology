@@ -26,6 +26,7 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     public List<String> cakeFruitAddingList;
     public List<String> cakeOtherIngredientList;
     public List<String> cakeOccasionList;
+    public List<String> cakeShapeList;
 
 
     private String selectedBase;
@@ -34,6 +35,9 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     private String selectedFruitAdding;
     private String selectedOtherIngredient;
     private String selectedOccasion;
+    private String selectedShape;
+    private String priceFrom;
+    private String priceTo;
 
     @Autowired
     private CakeOntologyService cakeOntologyService;
@@ -49,6 +53,7 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
         cakeFruitAddingList=co.findAllFruitAddings();
         cakeOtherIngredientList=co.findAllOtherIngredients();
         cakeOccasionList=co.findAllOccasions();
+        cakeShapeList=co.findAllShapes();
     }
 
 
@@ -155,5 +160,37 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
 
     public void setSelectedOccasion(String selectedOccasion) {
         this.selectedOccasion = selectedOccasion;
+    }
+
+    public List<String> getCakeShapeList() {
+        return cakeShapeList;
+    }
+
+    public void setCakeShapeList(List<String> cakeShapeList) {
+        this.cakeShapeList = cakeShapeList;
+    }
+
+    public String getSelectedShape() {
+        return selectedShape;
+    }
+
+    public void setSelectedShape(String selectedShape) {
+        this.selectedShape = selectedShape;
+    }
+
+    public String getPriceFrom() {
+        return priceFrom;
+    }
+
+    public void setPriceFrom(String priceFrom) {
+        this.priceFrom = priceFrom;
+    }
+
+    public String getPriceTo() {
+        return priceTo;
+    }
+
+    public void setPriceTo(String priceTo) {
+        this.priceTo = priceTo;
     }
 }

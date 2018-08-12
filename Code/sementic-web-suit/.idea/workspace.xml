@@ -30,19 +30,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="1195" />
+          <entry key="java" value="1237" />
           <entry key="properties" value="7" />
           <entry key="txt" value="13" />
-          <entry key="xhtml" value="455" />
+          <entry key="xhtml" value="493" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1195" />
+          <entry key="JAVA" value="1237" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Properties" value="7" />
-          <entry key="XHTML" value="455" />
+          <entry key="XHTML" value="493" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -107,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntology.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
+            <state relative-caret-position="330">
+              <caret line="231" column="56" lean-forward="true" selection-start-line="231" selection-start-column="56" selection-end-line="231" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#720#728#0" expanded="true" />
@@ -117,6 +117,7 @@
                 <element signature="e#5169#5177#0" expanded="true" />
                 <element signature="e#6669#6677#0" expanded="true" />
                 <element signature="e#8234#8242#0" expanded="true" />
+                <element signature="e#9709#9717#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +126,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/cake-search.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="325">
+              <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="97" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -134,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+            <state relative-caret-position="210">
+              <caret line="180" column="34" selection-start-line="180" selection-start-column="34" selection-end-line="180" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1694#1695#0" expanded="true" />
@@ -162,6 +163,7 @@
                 <element signature="e#3393#3394#0" expanded="true" />
                 <element signature="e#3597#3598#0" expanded="true" />
                 <element signature="e#3643#3644#0" expanded="true" />
+                <element signature="e#3967#3968#0" expanded="true" />
                 <element signature="e#4006#4007#0" expanded="true" />
                 <element signature="e#4076#4077#0" expanded="true" />
                 <element signature="e#4132#4133#0" expanded="true" />
@@ -169,6 +171,21 @@
                 <element signature="e#4214#4215#0" expanded="true" />
                 <element signature="e#4278#4279#0" expanded="true" />
                 <element signature="e#4334#4335#0" expanded="true" />
+                <element signature="e#4495#4496#0" expanded="true" />
+                <element signature="e#4531#4532#0" expanded="true" />
+                <element signature="e#4595#4596#0" expanded="true" />
+                <element signature="e#4645#4646#0" expanded="true" />
+                <element signature="e#4685#4686#0" expanded="true" />
+                <element signature="e#4721#4722#0" expanded="true" />
+                <element signature="e#4779#4780#0" expanded="true" />
+                <element signature="e#4829#4830#0" expanded="true" />
+                <element signature="e#4955#4956#0" expanded="true" />
+                <element signature="e#5005#5006#0" expanded="true" />
+                <element signature="e#5047#5048#0" expanded="true" />
+                <element signature="e#5081#5082#0" expanded="true" />
+                <element signature="e#5111#5112#0" expanded="true" />
+                <element signature="e#5157#5158#0" expanded="true" />
+                <element signature="e#5195#5196#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -525,7 +542,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534076802982" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534079455722" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -671,12 +688,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534001499391</updated>
-      <workItem from="1534001500666" duration="27844000" />
+      <workItem from="1534001500666" duration="29139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27844000" />
+    <option name="totallyTimeSpent" value="29139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="991" extended-state="0" />
@@ -689,7 +706,7 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Persistence" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.24969475" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -701,7 +718,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32990867" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32990867" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.32990867" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.32990867" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39954337" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -1061,10 +1078,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntology.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="231" column="56" lean-forward="true" selection-start-line="231" selection-start-column="56" selection-end-line="231" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#720#728#0" expanded="true" />
+            <element signature="e#2182#2190#0" expanded="true" />
+            <element signature="e#3684#3692#0" expanded="true" />
+            <element signature="e#5169#5177#0" expanded="true" />
+            <element signature="e#6669#6677#0" expanded="true" />
+            <element signature="e#8234#8242#0" expanded="true" />
+            <element signature="e#9709#9717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ontology/CakeSearchBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+        <state relative-caret-position="210">
+          <caret line="180" column="34" selection-start-line="180" selection-start-column="34" selection-end-line="180" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1694#1695#0" expanded="true" />
@@ -1091,6 +1125,7 @@
             <element signature="e#3393#3394#0" expanded="true" />
             <element signature="e#3597#3598#0" expanded="true" />
             <element signature="e#3643#3644#0" expanded="true" />
+            <element signature="e#3967#3968#0" expanded="true" />
             <element signature="e#4006#4007#0" expanded="true" />
             <element signature="e#4076#4077#0" expanded="true" />
             <element signature="e#4132#4133#0" expanded="true" />
@@ -1098,30 +1133,29 @@
             <element signature="e#4214#4215#0" expanded="true" />
             <element signature="e#4278#4279#0" expanded="true" />
             <element signature="e#4334#4335#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/CakeOntology.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#720#728#0" expanded="true" />
-            <element signature="e#2182#2190#0" expanded="true" />
-            <element signature="e#3684#3692#0" expanded="true" />
-            <element signature="e#5169#5177#0" expanded="true" />
-            <element signature="e#6669#6677#0" expanded="true" />
-            <element signature="e#8234#8242#0" expanded="true" />
+            <element signature="e#4495#4496#0" expanded="true" />
+            <element signature="e#4531#4532#0" expanded="true" />
+            <element signature="e#4595#4596#0" expanded="true" />
+            <element signature="e#4645#4646#0" expanded="true" />
+            <element signature="e#4685#4686#0" expanded="true" />
+            <element signature="e#4721#4722#0" expanded="true" />
+            <element signature="e#4779#4780#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
+            <element signature="e#4955#4956#0" expanded="true" />
+            <element signature="e#5005#5006#0" expanded="true" />
+            <element signature="e#5047#5048#0" expanded="true" />
+            <element signature="e#5081#5082#0" expanded="true" />
+            <element signature="e#5111#5112#0" expanded="true" />
+            <element signature="e#5157#5158#0" expanded="true" />
+            <element signature="e#5195#5196#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/cake-search.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="325">
+          <caret line="93" column="12" selection-start-line="93" selection-start-column="12" selection-end-line="97" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -204,4 +204,36 @@ public class CakeOntology {
         }
         return cakeOccasionList;
     }
+
+    public List<String> findAllShapes(){
+
+        FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
+        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        //  model.write(System.out,"TURTLE");
+
+        List<String> cakeShapeList = new ArrayList<String>();
+
+        String queryString ="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " +
+                "PREFIX cake: <http://www.cake.com/ontologies/cake.owl#> " +
+                "SELECT DISTINCT ?shape " +
+                "WHERE { ?subject cake:hasShape ?shape}";
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query,model);
+
+        try{
+            ResultSet results=qexec.execSelect();
+            while(results.hasNext()){
+                QuerySolution solution=results.nextSolution();
+                Resource bases= solution.getResource("shape");
+                System.out.println(bases.getLocalName());
+                cakeShapeList.add(bases.getLocalName());
+            }
+        }finally{
+            qexec.close();
+        }
+        return cakeShapeList;
+    }
 }
