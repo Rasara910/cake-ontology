@@ -40,12 +40,16 @@
                                        itemLabel="#{cfa}" itemValue="#{cfa}"/>
                     </p:selectOneMenu>
 
-                    <p:selectOneMenu id="otheringredients" value="" required="false">
+                    <p:selectOneMenu id="otheringredients" value="#{cakeSearchBean.selectedFruitAdding}" required="false">
                         <f:selectItem itemLabel="Select Other Ingredients"/>
+                        <f:selectItems value="#{cakeSearchBean.cakeOtherIngredientList}" var="coi"
+                                       itemLabel="#{coi}" itemValue="#{coi}"/>
                     </p:selectOneMenu>
 
-                    <p:selectOneMenu id="ocations" value="" required="false">
-                        <f:selectItem itemLabel="Select Occation"/>
+                    <p:selectOneMenu id="occasions" value="#{cakeSearchBean.selectedOccasion}" required="false">
+                        <f:selectItem itemLabel="Select Occasion"/>
+                        <f:selectItems value="#{cakeSearchBean.cakeOccasionList}" var="co"
+                                       itemLabel="#{co}" itemValue="#{co}"/>
                     </p:selectOneMenu>
 
                     <p:selectOneMenu id="shapes" value="" required="false">

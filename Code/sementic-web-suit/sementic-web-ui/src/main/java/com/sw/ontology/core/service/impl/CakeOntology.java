@@ -140,4 +140,68 @@ public class CakeOntology {
         }
         return cakeFruitAddingList;
     }
+
+    public List<String> findAllOtherIngredients(){
+
+        FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
+        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        //  model.write(System.out,"TURTLE");
+
+        List<String> cakeOtherIngredientList = new ArrayList<String>();
+
+        String queryString ="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " +
+                "PREFIX cake: <http://www.cake.com/ontologies/cake.owl#> " +
+                "SELECT DISTINCT ?additonal_ingredients " +
+                " WHERE { ?subject cake:hasIngredient ?additonal_ingredients}";
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query,model);
+
+        try{
+            ResultSet results=qexec.execSelect();
+            while(results.hasNext()){
+                QuerySolution solution=results.nextSolution();
+                Resource bases= solution.getResource("additonal_ingredients");
+                System.out.println(bases.getLocalName());
+                cakeOtherIngredientList.add(bases.getLocalName());
+            }
+        }finally{
+            qexec.close();
+        }
+        return cakeOtherIngredientList;
+    }
+
+    public List<String> findAllOccasions(){
+
+        FileManager.get().addLocatorClassLoader(CakeOntology.class.getClassLoader());
+        Model model =  FileManager.get().loadModel("/Users/praveen/cake-ontology/Code/sementic-web-suit/sementic-web-ui/src/main/java/com/sw/ontology/assets/cake.owl");
+        //  model.write(System.out,"TURTLE");
+
+        List<String> cakeOccasionList = new ArrayList<String>();
+
+        String queryString ="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> " +
+                "PREFIX cake: <http://www.cake.com/ontologies/cake.owl#> " +
+                "SELECT DISTINCT ?occasion " +
+                "WHERE { ?subject cake:hasOccasion ?occasion}";
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query,model);
+
+        try{
+            ResultSet results=qexec.execSelect();
+            while(results.hasNext()){
+                QuerySolution solution=results.nextSolution();
+                Resource bases= solution.getResource("occasion");
+                System.out.println(bases.getLocalName());
+                cakeOccasionList.add(bases.getLocalName());
+            }
+        }finally{
+            qexec.close();
+        }
+        return cakeOccasionList;
+    }
 }

@@ -24,12 +24,16 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
     public List<String> cakeFrostingList;
     public List<String> cakeToppingList;
     public List<String> cakeFruitAddingList;
+    public List<String> cakeOtherIngredientList;
+    public List<String> cakeOccasionList;
 
 
     private String selectedBase;
     private String selectedFrosting;
     private String selectedTopping;
     private String selectedFruitAdding;
+    private String selectedOtherIngredient;
+    private String selectedOccasion;
 
     @Autowired
     private CakeOntologyService cakeOntologyService;
@@ -43,6 +47,8 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
         cakeFrostingList=co.findAllFrostings();
         cakeToppingList=co.findAllToppings();
         cakeFruitAddingList=co.findAllFruitAddings();
+        cakeOtherIngredientList=co.findAllOtherIngredients();
+        cakeOccasionList=co.findAllOccasions();
     }
 
 
@@ -117,5 +123,37 @@ public class CakeSearchBean extends SecurityBean implements Serializable {
 
     public void setSelectedFruitAdding(String selectedFruitAdding) {
         this.selectedFruitAdding = selectedFruitAdding;
+    }
+
+    public List<String> getCakeOtherIngredientList() {
+        return cakeOtherIngredientList;
+    }
+
+    public void setCakeOtherIngredientList(List<String> cakeOtherIngredientList) {
+        this.cakeOtherIngredientList = cakeOtherIngredientList;
+    }
+
+    public String getSelectedOtherIngredient() {
+        return selectedOtherIngredient;
+    }
+
+    public void setSelectedOtherIngredient(String selectedOtherIngredient) {
+        this.selectedOtherIngredient = selectedOtherIngredient;
+    }
+
+    public List<String> getCakeOccasionList() {
+        return cakeOccasionList;
+    }
+
+    public void setCakeOccasionList(List<String> cakeOccasionList) {
+        this.cakeOccasionList = cakeOccasionList;
+    }
+
+    public String getSelectedOccasion() {
+        return selectedOccasion;
+    }
+
+    public void setSelectedOccasion(String selectedOccasion) {
+        this.selectedOccasion = selectedOccasion;
     }
 }
