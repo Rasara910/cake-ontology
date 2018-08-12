@@ -16,16 +16,44 @@
             <p:panel id="findCakes" header="Search Cakes">
                 <h:panelGrid columns="7" cellpadding="5" cellspacing="5">
 
-                    <p:selectOneMenu id="showroom" value="#{memberListBean.showroom}" required="false"
-                                     converter="#{showroomConverter}">
-                        <f:selectItem itemLabel="Select Showroom"/>
-                        <f:selectItems value="#{memberListBean.showroomList}" var="sn"
-                                       itemLabel="#{sn.showroomName}" itemValue="#{sn}"/>
+                    <p:selectOneMenu id="cakebase" value="#{cakeSearchBean.selectedBase}" required="false">
+                        <f:selectItem itemLabel="Select Cake Base"/>
+                        <f:selectItems value="#{cakeSearchBean.cakeBaseList}" var="cb"
+                                       itemLabel="#{cb}" itemValue="#{cb}"/>
                     </p:selectOneMenu>
 
+                    <p:selectOneMenu id="frosting" value="" required="false">
+                        <f:selectItem itemLabel="Select Frosting"/>
+                    </p:selectOneMenu>
 
-                    <p:commandButton value="Search" actionListener="#{memberListBean.searchMember}"
-                                     update="msgs,tblMembers"/>
+                    <p:selectOneMenu id="topping" value="" required="false">
+                        <f:selectItem itemLabel="Select Topping"/>
+                    </p:selectOneMenu>
+
+                    <p:selectOneMenu id="fruitadding" value="" required="false">
+                        <f:selectItem itemLabel="Select Fruit Addings"/>
+                    </p:selectOneMenu>
+
+                    <p:selectOneMenu id="otheringredients" value="" required="false">
+                        <f:selectItem itemLabel="Select Other Ingredients"/>
+                    </p:selectOneMenu>
+
+                    <p:selectOneMenu id="ocations" value="" required="false">
+                        <f:selectItem itemLabel="Select Occation"/>
+                    </p:selectOneMenu>
+
+                    <p:selectOneMenu id="shapes" value="" required="false">
+                        <f:selectItem itemLabel="Select Shape"/>
+                    </p:selectOneMenu>
+
+                    <p:inputText id="pricefrom" value="" required="false" maxlength="20"
+                                 placeholder="Price: From (Rs.)"/>
+                    <p:inputText id="priceto" value="" required="false" maxlength="20"
+                                 placeholder="To (Rs.)"/>
+
+
+                    <p:commandButton value="Search" actionListener="#"
+                                     update=""/>
                     <p:growl id="msgs"/>
                 </h:panelGrid>
             </p:panel>
