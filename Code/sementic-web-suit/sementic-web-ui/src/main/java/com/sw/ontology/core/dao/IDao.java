@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
- * @author Amith Fernando
+ * Created by praveen on 8/12/18
  */
 public interface IDao<T, PK extends Serializable> {
 

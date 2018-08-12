@@ -21,9 +21,9 @@ import java.util.List;
 import com.sw.ontology.model.User;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 public interface UserService {
 
     public void save(User user, String userName) throws SystemException;
@@ -36,8 +36,6 @@ public interface UserService {
 
     public User findByUserName(String employeeId) throws SystemException;
 
-
-    public User initSystemUser(String username) throws SystemException;
     
     public List<User> findByRoleName(String roleName) ;
 

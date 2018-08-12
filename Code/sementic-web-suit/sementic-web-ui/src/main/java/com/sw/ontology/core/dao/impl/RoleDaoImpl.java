@@ -10,9 +10,9 @@ import com.sw.ontology.model.Role;
 import org.springframework.stereotype.Repository;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @Repository
 public class RoleDaoImpl extends DaoImpl<Role, String> implements RoleDao {
     

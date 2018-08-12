@@ -10,6 +10,10 @@ import org.springframework.stereotype.Service;
 
 import com.sw.ontology.model.PasswordPolicy;
 
+/**
+ * Created by praveen on 8/12/18
+ */
+
 @Service
 public class PasswordPolicyServiceImpl extends DaoImpl<PasswordPolicy, String> implements PasswordPolicyService {
 	

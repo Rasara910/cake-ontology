@@ -10,9 +10,9 @@ import com.sw.ontology.model.User;
 import org.springframework.stereotype.Repository;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @Repository
 public class UserDaoImpl extends DaoImpl<User, String> implements UserDao {
 

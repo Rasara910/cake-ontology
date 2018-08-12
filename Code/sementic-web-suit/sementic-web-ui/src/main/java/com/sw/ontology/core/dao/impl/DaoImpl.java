@@ -38,11 +38,9 @@ import javax.persistence.Query;
 
 
 /**
- *
- * @author Amith Fernando
- * @param <T>
- * @param <PK>
+ * Created by praveen on 8/12/18
  */
+
 public abstract class DaoImpl<T, PK extends Serializable> implements IDao<T, PK> {
 
     /* Persistence Entity class type. */

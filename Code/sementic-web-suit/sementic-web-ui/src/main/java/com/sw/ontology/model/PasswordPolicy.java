@@ -21,11 +21,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @Entity
-@Table(name = "fgl_password_policy")
+@Table(name = "sw_password_policy")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "PasswordPolicy.findAll", query = "SELECT p FROM PasswordPolicy p"),

@@ -7,17 +7,140 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3b95e8-b25b-493f-9664-58d2eed1176c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/filter/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/filter/SecurityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/servlet/Log4jServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/servlet/Log4jServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JasperReportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JasperReportUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JsfUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JsfUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ApplicationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ApplicationBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/SecurityBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/SecurityBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/login/LoginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/login/LoginBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/EmailDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/IDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/LoyaltyProgramDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/MemberClassDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/MemberMasterDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/MemberPointLedgerDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/MemberPointLedgerTrxDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/MemberTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PasswordPolicyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PasswordPolicyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PrivilegeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PrivilegeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/ProductTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/ProgramPeriodDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/ProgramRuleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RecivedSmsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RedeemDetailsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RedeemDetailsStatusHistoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RedeemTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RolePrivilegeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/SalutationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/ShowroomDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/SmsLogDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/TransactionCategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/TransactionTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/DaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/DaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/EmailDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/LoyaltyProgramDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/MemberClassDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/MemberMasterDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/MemberPointLedgerDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/MemberPointLedgerTrxDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/MemberTypeDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PasswordPolicyDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PasswordPolicyDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PrivilegeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PrivilegeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/ProductTypeDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/ProgramPeriodDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/ProgramRuleDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RecviedSmsDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RedeemDetailsDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RedeemPointStatusHistoryDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RedeemTypeDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RoleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RoleDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RolePrivilegeDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/SalutationDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/ShowroomDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/SmsLogDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/TransactionCategoryDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/TransactionTypeDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/SystemException.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/SystemException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/ValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/ValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/EmailSendingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/LoyaltyProgramRuleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/LoyaltyProgramService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/MemberClassService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/MemberMasterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/MemberPointLedgerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/MemberTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PasswordPolicyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PasswordPolicyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PrivilegeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PrivilegeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/ProductTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RecivedSmsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RedeemPointStatusHistoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RedeemTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/SalutationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/ShowroomService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/SmsLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/TransactionCategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/TransactionTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/EmailSendingServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/EmailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/LoyaltyProgramRuleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/LoyaltyProgramServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/MemberClassServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/MemberMasterServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/MemberPointLedgerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/MemberTypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PasswordPolicyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PasswordPolicyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PrivilegeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PrivilegeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/ProductTypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/RecivedSmsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/RedeemPointStatusHistoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/RedeemTypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/SalutationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/ShowroomServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/SmsLogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/TransactionCategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/TransactionTypeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Email.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/LoyaltyProgram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/MemberClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/MemberMaster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/MemberPointLedger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/MemberPointLedgerTrx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/MemberType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/PasswordPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/PasswordPolicy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Privilege.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Privilege.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/ProductType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/ProgramPeriod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/ProgramRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RclSale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RecivedSms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RedeemDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RedeemDetailsStatusHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RedeemType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RolePrivilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RolePrivilegePK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Salutation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Showroom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/SmsLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/TransactionCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/TransactionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/EmailStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/GeneralStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/MemberStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/ProgramType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/RclSaleStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/RedeemStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/SmsLogStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/SmsLogType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/SystemRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/UserStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/util/DateUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassListBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassListBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassSaveBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassSaveBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/PropertyReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sementic-web-ui/target/" />
@@ -37,26 +160,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="38" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="38" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="16" />
+          <entry key="java" value="55" />
           <entry key="xhtml" value="3" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="55" />
           <entry key="XHTML" value="3" />
           <entry key="XML" value="1" />
         </counts>
@@ -69,7 +192,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JsfUtil.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/IDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
@@ -78,82 +201,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/utils/JasperReportUtil.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PasswordPolicyDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PrivilegeDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/filter/SecurityFilter.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RoleDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/PropertyReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/DateUtil.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/DaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="142">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/SecurityBean.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PasswordPolicyDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/login/LoginBean.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PrivilegeDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-543">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="120">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassListBean.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RoleDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassSaveBean.java">
+        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ApplicationBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -182,8 +305,33 @@
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/SecurityBean.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ApplicationBean.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/login/LoginBean.java" />
-        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassListBean.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/PasswordPolicy.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/User.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Privilege.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Role.java" />
         <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassSaveBean.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassListBean.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PasswordPolicyService.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RecivedSmsService.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PasswordPolicyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PrivilegeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PrivilegeService.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/UserService.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/ValidationException.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/SystemException.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/IDao.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PasswordPolicyDao.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PrivilegeDao.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RoleDao.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RoleDaoImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PrivilegeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PasswordPolicyDaoImpl.java" />
+        <option value="$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/DaoImpl.java" />
       </list>
     </option>
   </component>
@@ -270,7 +418,96 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ontology" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ontology" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="member" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
@@ -279,6 +516,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sementic-web-suit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sementic-web-suit" type="462c0819:PsiDirectoryNode" />
+              <item name="sementic-web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +535,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534037160185" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534038892847" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -389,15 +635,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534001499391</updated>
-      <workItem from="1534001500666" duration="1213000" />
+      <workItem from="1534001500666" duration="2561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1213000" />
+    <option name="totallyTimeSpent" value="2561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="991" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Designer" />
@@ -412,12 +659,12 @@
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32990867" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32990867" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32990867" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32990867" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32990867" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -443,15 +690,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/member-class-list.xhtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/webapp/views/member-class-save.xhtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/ApplicationConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -504,20 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassListBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassSaveBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/ApplicationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -535,7 +759,70 @@
     <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/util/PropertyReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/GeneralStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/ProgramType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/SmsLogType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/SmsLogStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/MemberStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/SystemRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/enums/UserStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -543,6 +830,216 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/RolePrivilege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/Privilege.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/SalutationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassSaveBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="38" column="13" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/EmailSendingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/ui/views/member/MemberClassListBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/model/PasswordPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="22" selection-start-line="22" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RecivedSmsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PasswordPolicyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/PrivilegeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PrivilegeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/service/impl/PasswordPolicyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/ValidationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/exception/SystemException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/IDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PasswordPolicyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/PrivilegeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/RoleDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PrivilegeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/PasswordPolicyDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sementic-web-ui/src/main/java/com/sw/ontology/core/dao/impl/DaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>

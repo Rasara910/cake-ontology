@@ -8,8 +8,7 @@ package com.sw.ontology.core.dao;
 import com.sw.ontology.model.User;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
 public interface UserDao extends IDao<User, String>{
     

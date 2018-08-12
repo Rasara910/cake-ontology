@@ -10,9 +10,9 @@ import com.sw.ontology.model.Privilege;
 import org.springframework.stereotype.Repository;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @Repository
 public class PrivilegeDaoImpl extends DaoImpl<Privilege, String> implements PrivilegeDao {
     

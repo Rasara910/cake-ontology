@@ -8,8 +8,7 @@ package com.sw.ontology.core.dao;
 import com.sw.ontology.model.Role;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
 public interface RoleDao extends IDao<Role, String>{
     

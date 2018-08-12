@@ -29,9 +29,9 @@
 package com.sw.ontology.core.exception;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 public class ValidationException extends Exception{
 
     public ValidationException(String message) {

@@ -24,11 +24,11 @@ import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @Entity
-@Table(name = "fgl_user")
+@Table(name = "sw_user")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "User.findAll", query = "SELECT u FROM User u"),
@@ -81,9 +81,6 @@ public class User implements Serializable {
     @JoinColumn(name = "policy_id", referencedColumnName = "policy_id")
     @ManyToOne
     private PasswordPolicy policyId;
-    @JoinColumn(name = "showroom_name", referencedColumnName = "showroom_name")
-    @ManyToOne
-    private Showroom showroomName;
 
     @Transient
     private List<Privilege> privileges;
@@ -202,13 +199,7 @@ public class User implements Serializable {
         this.policyId = policyId;
     }
 
-    public Showroom getShowroomName() {
-        return showroomName;
-    }
 
-    public void setShowroomName(Showroom showroomName) {
-        this.showroomName = showroomName;
-    }
 
     @Override
     public int hashCode() {

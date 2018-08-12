@@ -9,12 +9,12 @@ import com.sw.ontology.model.Privilege;
 import com.sw.ontology.model.Role;
 
 /**
- * @author kithmal
- * 
+ * Created by praveen on 8/12/18
  */
+
 public interface RoleService {
   
-  public void save(Role role, List<Privilege> privileges);
+//  public void save(Role role, List<Privilege> privileges);
   
   public Role findByRoleName(String roleName) throws Exception;
   

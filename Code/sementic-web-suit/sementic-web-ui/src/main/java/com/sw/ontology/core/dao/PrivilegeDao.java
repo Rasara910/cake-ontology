@@ -8,8 +8,7 @@ package com.sw.ontology.core.dao;
 import com.sw.ontology.model.Privilege;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
 public interface PrivilegeDao extends IDao<Privilege, String>{
     

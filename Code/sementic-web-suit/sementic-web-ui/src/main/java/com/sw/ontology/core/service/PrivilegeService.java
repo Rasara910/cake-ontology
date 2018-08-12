@@ -9,14 +9,14 @@ import com.sw.ontology.model.Privilege;
 
 
 /**
- * @author kithmal
- * 
+ * Created by praveen on 8/12/18
  */
+
 public interface PrivilegeService {
   
   public List<Privilege> findAll();
   
   public Privilege findByPrivilegeName(String privilegeName);
   
-    public List<Privilege> findByRoles(String roleName);
+
 }

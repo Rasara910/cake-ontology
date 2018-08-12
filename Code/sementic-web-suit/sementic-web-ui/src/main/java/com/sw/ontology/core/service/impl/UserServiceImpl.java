@@ -35,8 +35,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
 @Service
 public class UserServiceImpl implements UserService {
@@ -105,19 +104,6 @@ public class UserServiceImpl implements UserService {
         }
     }
 
-
-    @Override
-    public User initSystemUser(String username) throws SystemException {
-        try {
-            User user = findByUserName(username);
-            List<Privilege> findByRoles = privilegeService.findByRoles(user.getRoleName().getRoleName());
-            user.setPrivileges(findByRoles);
-            return user;
-        } catch (Exception e) {
-            logger.error("error occured in initSystemUser()", e);
-            throw new SystemException("error", e);
-        }
-    }
 
     @Override
     public List<User> findByRoleName(String roleName) {

@@ -23,11 +23,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @Entity
-@Table(name = "fgl_role")
+@Table(name = "sw_role")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Role.findAll", query = "SELECT r FROM Role r"),
@@ -62,8 +62,6 @@ public class Role implements Serializable {
     private Date modifiedDate;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "roleName")
     private List<User> userList;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "role")
-    private List<RolePrivilege> rolePrivilegeList;
 
     public Role() {
     }
@@ -136,15 +134,6 @@ public class Role implements Serializable {
 
     public void setUserList(List<User> userList) {
         this.userList = userList;
-    }
-
-    @XmlTransient
-    public List<RolePrivilege> getRolePrivilegeList() {
-        return rolePrivilegeList;
-    }
-
-    public void setRolePrivilegeList(List<RolePrivilege> rolePrivilegeList) {
-        this.rolePrivilegeList = rolePrivilegeList;
     }
 
     @Override

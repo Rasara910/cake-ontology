@@ -6,9 +6,9 @@
 package com.sw.ontology.core.exception;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 public class SystemException extends Exception{
 
     public SystemException(String message) {

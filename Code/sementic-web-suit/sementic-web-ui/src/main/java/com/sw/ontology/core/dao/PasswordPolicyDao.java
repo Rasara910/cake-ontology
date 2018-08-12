@@ -8,9 +8,9 @@ package com.sw.ontology.core.dao;
 import com.sw.ontology.model.PasswordPolicy;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 public interface PasswordPolicyDao extends IDao<PasswordPolicy, Integer>{
     
     

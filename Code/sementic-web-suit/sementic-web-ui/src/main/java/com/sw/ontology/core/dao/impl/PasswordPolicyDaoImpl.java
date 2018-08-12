@@ -10,9 +10,9 @@ import com.sw.ontology.model.PasswordPolicy;
 import org.springframework.stereotype.Repository;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @Repository
 public class PasswordPolicyDaoImpl extends DaoImpl<PasswordPolicy, Integer> implements PasswordPolicyDao {
     
