@@ -10,8 +10,7 @@ import javax.servlet.ServletContextListener;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 
 /**
- *
- * @author amithfernando
+ * Created by praveen on 8/12/18
  */
 public class Log4jServlet implements ServletContextListener {
 

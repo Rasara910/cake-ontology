@@ -18,9 +18,9 @@ import java.io.IOException;
 import javax.faces.bean.SessionScoped;
 
 /**
- *
- * @author Amith
+ * Created by praveen on 8/12/18
  */
+
 @ManagedBean
 @SessionScoped
 public class LoginBean implements Serializable {

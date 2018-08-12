@@ -18,7 +18,7 @@ import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 
 /**
- * @author Amith
+ * Created by praveen on 8/12/18
  */
 @ManagedBean
 @ApplicationScoped

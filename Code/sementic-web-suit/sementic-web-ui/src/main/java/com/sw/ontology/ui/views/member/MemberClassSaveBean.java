@@ -19,8 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- *
- * @author amithfernando
+ * Created by praveen on 8/12/18
  */
 
 @Component

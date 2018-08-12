@@ -15,8 +15,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 /**
- *
- * @author Nayani Chamalka
+ * Created by praveen on 8/12/18
  */
 public class JasperReportUtil {
 

@@ -18,8 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *
- * @author amithfernando
+ * Created by praveen on 8/12/18
  */
 public class SecurityFilter implements Filter {
 

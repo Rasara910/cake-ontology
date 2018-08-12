@@ -10,8 +10,7 @@ import javax.faces.context.FacesContext;
 import javax.servlet.ServletContext;
 
 /**
- *
- * @author Nayani Chamalka
+ * Created by praveen on 8/12/18
  */
 public class JsfUtil {
     

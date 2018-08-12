@@ -10,8 +10,7 @@ import java.util.Map;
 import javax.faces.context.FacesContext;
 
 /**
- *
- * @author amithfernando
+ * Created by praveen on 8/12/18
  */
 public abstract class SecurityBean {
 
