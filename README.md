@@ -1,9 +1,9 @@
 # Cake Ontology System #
 ## Bake n Take
 
-URL: https://cake-ontology-ui.herokuapp.com
-Username: user
-Password: user
+* URL: https://cake-ontology-ui.herokuapp.com
+* Username: user
+* Password: user
 
 ## Search Instructions
 * Use one or few selections to get the details of the cakes.
